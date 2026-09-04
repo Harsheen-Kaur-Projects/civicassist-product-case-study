@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CivicAssist — Screen Reference</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1B2A4A;
+    --navy-deep:#131F38;
+    --ink:#1A1F2B;
+    --ink-soft:#525A6B;
+    --paper:#F1F3F6;
+    --card:#FFFFFF;
+    --line:#DBDFE6;
+    --verified:#2B6E58;
+    --verified-bg:#EAF3EF;
+    --caution:#4A5A78;
+    --caution-bg:#EEF1F6;
+    --serif:'Source Serif 4', Georgia, serif;
+    --sans:'Public Sans', -apple-system, Segoe UI, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    background:var(--paper);
+    color:var(--ink);
+    padding:32px 16px 64px;
+  }
+  .wrap{max-width:1040px;margin:0 auto;}
+  .masthead{margin-bottom:28px;}
+  .masthead h1{
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:28px;
+    margin:0 0 6px;
+    color:var(--navy-deep);
+  }
+  .masthead p{
+    margin:0;
+    color:var(--ink-soft);
+    font-size:14px;
+    max-width:60ch;
+    line-height:1.5;
+  }
+  .tabs{
+    display:flex;
+    gap:4px;
+    flex-wrap:wrap;
+    border-bottom:1px solid var(--line);
+    margin:24px 0 32px;
+  }
+  .tab{
+    font-family:var(--sans);
+    font-size:13px;
+    font-weight:600;
+    color:var(--ink-soft);
+    background:none;
+    border:none;
+    padding:10px 14px;
+    cursor:pointer;
+    border-bottom:2px solid transparent;
+    transition:color .15s ease, border-color .15s ease;
+  }
+  .tab:hover{color:var(--ink);}
+  .tab.active{color:var(--navy-deep);border-bottom-color:var(--navy-deep);}
+
+  .stage{display:flex;gap:40px;align-items:flex-start;flex-wrap:wrap;}
+  .phone{
+    width:340px;
+    min-height:640px;
+    background:var(--card);
+    border-radius:26px;
+    border:1px solid var(--line);
+    box-shadow:0 24px 48px -28px rgba(19,31,56,.35);
+    overflow:hidden;
+    flex-shrink:0;
+  }
+  .status-bar{
+    background:var(--navy-deep);
+    color:#fff;
+    padding:14px 18px 12px;
+    font-family:var(--sans);
+  }
+  .status-bar .brand{
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.2px;
+  }
+  .status-bar .brand span{color:#8FB6A6;}
+  .screen-body{padding:20px 18px 18px;}
+  .screen-title{
+    font-family:var(--serif);
+    font-size:19px;
+    font-weight:600;
+    color:var(--navy-deep);
+    margin:0 0 8px;
+    line-height:1.3;
+  }
+  .screen-sub{
+    font-size:13px;
+    color:var(--ink-soft);
+    line-height:1.5;
+    margin:0 0 18px;
+  }
+  textarea.mock, .mock-input{
+    width:100%;
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:11px 12px;
+    font-family:var(--sans);
+    font-size:14px;
+    color:var(--ink);
+    resize:none;
+    background:#FAFBFC;
+  }
+  textarea.mock{height:96px;line-height:1.5;}
+  .chip-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px;}
+  .chip{
+    font-size:12px;
+    padding:6px 10px;
+    border-radius:16px;
+    border:1px solid var(--line);
+    color:var(--ink-soft);
+    background:#fff;
+  }
+  .btn-primary{
+    width:100%;
+    margin-top:20px;
+    background:var(--navy-deep);
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    padding:13px;
+    font-family:var(--sans);
+    font-weight:600;
+    font-size:14px;
+    cursor:default;
+  }
+  .btn-secondary{
+    width:100%;
+    margin-top:10px;
+    background:none;
+    color:var(--navy-deep);
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:12px;
+    font-family:var(--sans);
+    font-weight:600;
+    font-size:14px;
+    cursor:default;
+  }
+
+  .answer-card{
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:14px 15px;
+    margin-bottom:14px;
+  }
+  .answer-headline{
+    font-family:var(--serif);
+    font-size:16px;
+    line-height:1.45;
+    margin:0 0 10px;
+  }
+  .cite{
+    border-left:3px solid var(--verified);
+    background:var(--verified-bg);
+    padding:8px 10px;
+    font-size:12px;
+    color:var(--verified);
+    border-radius:0 6px 6px 0;
+    display:flex;
+    justify-content:space-between;
+    gap:8px;
+    align-items:baseline;
+  }
+  .cite b{font-weight:700;}
+  .cite .date{color:#4B8873;white-space:nowrap;}
+
+  .uncertain-card{
+    border-left:3px solid var(--caution);
+    background:var(--caution-bg);
+    border-radius:0 10px 10px 0;
+    padding:14px 15px;
+    margin-bottom:14px;
+  }
+  .uncertain-card .label{
+    font-size:11px;
+    font-weight:700;
+    color:var(--caution);
+    margin-bottom:6px;
+  }
+  .uncertain-card p{
+    font-size:13.5px;
+    line-height:1.55;
+    margin:0 0 10px;
+    color:var(--ink);
+  }
+  .uncertain-card ul{
+    margin:0;
+    padding-left:18px;
+    font-size:13px;
+    line-height:1.6;
+    color:var(--ink-soft);
+  }
+
+  .checklist-item{
+    display:flex;
+    gap:10px;
+    padding:11px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .checklist-item:last-child{border-bottom:none;}
+  .checklist-num{
+    width:22px;height:22px;
+    border-radius:50%;
+    border:1.5px solid var(--navy-deep);
+    color:var(--navy-deep);
+    font-size:11px;
+    font-weight:700;
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+  }
+  .checklist-text b{font-size:13.5px;display:block;margin-bottom:2px;}
+  .checklist-text span{font-size:12px;color:var(--ink-soft);}
+
+  .source-panel{
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:15px;
+  }
+  .source-panel .row{
+    display:flex;
+    justify-content:space-between;
+    padding:9px 0;
+    border-bottom:1px solid var(--line);
+    font-size:12.5px;
+  }
+  .source-panel .row:last-child{border-bottom:none;}
+  .source-panel .row span:first-child{color:var(--ink-soft);}
+  .source-panel .row span:last-child{font-weight:600;text-align:right;}
+  .quote-block{
+    font-family:var(--serif);
+    font-size:13.5px;
+    line-height:1.55;
+    color:var(--ink);
+    background:#FAFBFC;
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:12px;
+    margin:12px 0;
+  }
+
+  .notes{
+    max-width:400px;
+    padding-top:6px;
+  }
+  .notes h3{
+    font-family:var(--sans);
+    font-size:13px;
+    text-transform:none;
+    letter-spacing:.2px;
+    color:var(--navy-deep);
+    margin:0 0 10px;
+    font-weight:700;
+  }
+  .notes ul{
+    margin:0 0 20px;
+    padding-left:18px;
+    font-size:13.5px;
+    line-height:1.7;
+    color:var(--ink-soft);
+  }
+  .notes ul li b{color:var(--ink);}
+
+  @media (max-width:760px){
+    .stage{flex-direction:column;align-items:center;}
+    .phone{width:100%;max-width:340px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="masthead">
+    <h1>CivicAssist — core screens</h1>
+    <p>A content and flow reference for the Figma prototype. Every claim on the answer screen carries a citation; the uncertainty screen is the product's answer to the eval harness's fabricated-eligibility-rule finding.</p>
+  </div>
+
+  <div class="tabs" id="tabs"></div>
+  <div class="stage">
+    <div class="phone" id="phone"></div>
+    <div class="notes" id="notes"></div>
+  </div>
+</div>
+
+<script>
+const screens = [
+  {
+    id: "input",
+    tab: "1. Describe your situation",
+    render: () => `
+      <div class="status-bar"><span class="brand">Civic<span>Assist</span></span></div>
+      <div class="screen-body">
+        <p class="screen-title">What are you trying to find out?</p>
+        <p class="screen-sub">Describe your situation in your own words. You don't need to know the official terms.</p>
+        <textarea class="mock" readonly>I'm a final-year student. My father was between jobs for part of last year — does that affect our family income for the scholarship?</textarea>
+        <div class="chip-row">
+          <span class="chip">Education scholarship</span>
+          <span class="chip">Change scheme</span>
+        </div>
+        <button class="btn-primary">Check my eligibility</button>
+        <button class="btn-secondary" style="margin-top:8px;">This is a bit more complicated</button>
+      </div>
+    `,
+    notes: `
+      <h3>Why this screen looks like this</h3>
+      <ul>
+        <li><b>Free text, not a form</b> — journey map showed edge cases (income gaps, mixed documents) don't fit clean dropdowns.</li>
+        <li><b>Scheme chip is visible but not the focus</b> — the situation matters more than the category to the person describing it.</li>
+        <li>No account creation, no saved state — v1 is a stateless check per the scoping note.</li>
+      </ul>
+    `
+  },
+  {
+    id: "answer",
+    tab: "2. Cited answer",
+    render: () => `
+      <div class="status-bar"><span class="brand">Civic<span>Assist</span></span></div>
+      <div class="screen-body">
+        <p class="screen-title">You likely qualify</p>
+        <div class="answer-card">
+          <p class="answer-headline">Based on the income criteria, a gap year counts toward household income only for the months your father was employed.</p>
+          <div class="cite">
+            <span><b>Scholarship Eligibility Circular, Section 4.2</b></span>
+            <span class="date">Updated Mar 2026</span>
+          </div>
+        </div>
+        <button class="btn-secondary">See the source in full</button>
+        <button class="btn-primary">Get my document checklist</button>
+      </div>
+    `,
+    notes: `
+      <h3>Why this screen looks like this</h3>
+      <ul>
+        <li><b>Citation is a visible block, not a footnote</b> — trust research (research plan Q10) suggests source + date is what people want alongside an answer.</li>
+        <li>Date is shown with equal weight to the source name — staleness was flagged as a risk before interviews even confirm it (PRD row M3).</li>
+        <li>Green accent reserved only for verified/cited content — establishes a color language before the uncertainty screen introduces a cooler, neutral slate tone (deliberately not amber/red, so it doesn't read as an error at a glance).</li>
+      </ul>
+    `
+  },
+  {
+    id: "uncertain",
+    tab: "3. Uncertainty state",
+    render: () => `
+      <div class="status-bar"><span class="brand">Civic<span>Assist</span></span></div>
+      <div class="screen-body">
+        <p class="screen-title">This isn't fully covered by our sources</p>
+        <div class="uncertain-card">
+          <div class="label">NOT A REJECTION — UNRESOLVED</div>
+          <p>The circular doesn't specifically address a household with two income gaps in the same year. We won't guess at a rule that isn't written down.</p>
+          <ul>
+            <li>Call the scholarship helpline and ask about Section 4.2 specifically</li>
+            <li>Bring both employment gap letters when you apply — worth submitting even if unsure</li>
+          </ul>
+        </div>
+        <button class="btn-secondary">Get my document checklist anyway</button>
+      </div>
+    `,
+    notes: `
+      <h3>Why this screen looks like this</h3>
+      <ul>
+        <li>This is the direct product answer to the eval harness's fabricated 12–24 month rule — when sources don't cover the case, the system says so instead of extrapolating (PRD rows M1, M2).</li>
+        <li><b>"Not a rejection" is stated explicitly</b> — usability testing plan flags this as the exact confusion to watch for: uncertain must not read as "you don't qualify."</li>
+        <li>Still gives two concrete next actions — an honest answer isn't a dead end.</li>
+      </ul>
+    `
+  },
+  {
+    id: "checklist",
+    tab: "4a. Document checklist",
+    render: () => `
+      <div class="status-bar"><span class="brand">Civic<span>Assist</span></span></div>
+      <div class="screen-body">
+        <p class="screen-title">Documents for your case</p>
+        <p class="screen-sub">Scoped to what you told us — not the full generic list.</p>
+        <div class="checklist-item">
+          <div class="checklist-num">1</div>
+          <div class="checklist-text"><b>Father's employment gap letter</b><span>Covers the months he was between jobs</span></div>
+        </div>
+        <div class="checklist-item">
+          <div class="checklist-num">2</div>
+          <div class="checklist-text"><b>Latest income certificate</b><span>Issued within the last 6 months</span></div>
+        </div>
+        <div class="checklist-item">
+          <div class="checklist-num">3</div>
+          <div class="checklist-text"><b>Your enrollment confirmation</b><span>From your current institution</span></div>
+        </div>
+        <button class="btn-primary">Done — I have these</button>
+      </div>
+    `,
+    notes: `
+      <h3>Why this screen looks like this</h3>
+      <ul>
+        <li>Numbered list used here (and only here) because a checklist genuinely is a sequence — see frontend-design guidance against decorative numbering elsewhere.</li>
+        <li><b>Situation-specific, not generic</b> — journey map's documentation stage showed people missing documents not mentioned on the main page (PRD row M6).</li>
+        <li>Each item explains <i>why</i> it's needed, addressing the "why do I need this" confusion from research.</li>
+      </ul>
+    `
+  },
+  {
+    id: "checklist-edge",
+    tab: "4b. Document checklist (edge case)",
+    render: () => `
+      <div class="status-bar"><span class="brand">Civic<span>Assist</span></span></div>
+      <div class="screen-body">
+        <p class="screen-title">Documents for your case</p>
+        <p class="screen-sub">Scoped to what you told us — not the full generic list.</p>
+        <div class="checklist-item">
+          <div class="checklist-num">1</div>
+          <div class="checklist-text"><b>Father's employment gap letters</b><span>Covers both periods he was between jobs</span></div>
+        </div>
+        <div class="checklist-item">
+          <div class="checklist-num">2</div>
+          <div class="checklist-text"><b>Latest income certificate</b><span>Issued within the last 6 months</span></div>
+        </div>
+        <div class="checklist-item">
+          <div class="checklist-num">3</div>
+          <div class="checklist-text"><b>Your enrollment confirmation</b><span>From your current institution</span></div>
+        </div>
+        <button class="btn-primary">Done — I have these</button>
+      </div>
+    `,
+    notes: `
+      <h3>Why this screen looks like this</h3>
+      <ul>
+        <li>Split into a second screen rather than reused, because Screen 3 states two income gaps — reusing the single-letter version here would repeat the exact checklist mismatch caught during design review (see the design QA notes in the usability testing plan).</li>
+        <li>Only the gap-letter item differs from 4a — items 2 and 3 remain unchanged, since neither requirement depends on which path led here.</li>
+        <li>Keeps the subtitle's claim — "scoped to what you told us" — accurate for both paths, not only the standard one.</li>
+      </ul>
+    `
+  },
+  {
+    id: "source",
+    tab: "5. Source detail",
+    render: () => `
+      <div class="status-bar"><span class="brand">Civic<span>Assist</span></span></div>
+      <div class="screen-body">
+        <p class="screen-title">Scholarship Eligibility Circular</p>
+        <div class="source-panel">
+          <div class="row"><span>Issuing body</span><span>State Education Dept.</span></div>
+          <div class="row"><span>Section cited</span><span>4.2 — Household income</span></div>
+          <div class="row"><span>Last updated</span><span>March 2026</span></div>
+          <div class="row"><span>Retrieved</span><span>Today</span></div>
+        </div>
+        <div class="quote-block">"Where a parent's employment was interrupted during the assessment year, income shall be calculated on the basis of months actually employed."</div>
+        <button class="btn-secondary">Open original document</button>
+      </div>
+    `,
+    notes: `
+      <h3>Why this screen looks like this</h3>
+      <ul>
+        <li>Tapping a citation goes somewhere real — provenance isn't just a label, it's inspectable.</li>
+        <li>"Retrieved today" vs "Last updated March 2026" are shown separately — makes staleness checkable at a glance, not just asserted.</li>
+        <li>This screen is what makes M1 (visible citation) actually trustworthy rather than decorative.</li>
+      </ul>
+    `
+  }
+];
+
+const tabsEl = document.getElementById('tabs');
+const phoneEl = document.getElementById('phone');
+const notesEl = document.getElementById('notes');
+
+function renderScreen(id){
+  const screen = screens.find(s => s.id === id);
+  phoneEl.innerHTML = screen.render();
+  notesEl.innerHTML = screen.notes;
+  document.querySelectorAll('.tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.id === id);
+  });
+}
+
+screens.forEach((s, i) => {
+  const btn = document.createElement('button');
+  btn.className = 'tab' + (i === 0 ? ' active' : '');
+  btn.textContent = s.tab;
+  btn.dataset.id = s.id;
+  btn.onclick = () => renderScreen(s.id);
+  tabsEl.appendChild(btn);
+});
+
+renderScreen(screens[0].id);
+</script>
+</body>
+</html>
