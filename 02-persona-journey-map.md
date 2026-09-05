@@ -41,7 +41,7 @@ She then reaches a situation where the available information doesn't give a clea
 
 Maybe there were two separate gaps in family income during the year, but the published rule only talks about one. At this point, a normal system might still force the situation into a yes or no answer.
 
-That creates a bigger problem: is she actually not eligible, or does the system just not have enough information to tell?
+That creates a bigger problem. At that point she genuinely can't tell: turned down, or just stuck in the system somewhere?
 
 CivicAssist: Instead of turning an unclear case into a rejection, the assistant shows that the answer is uncertain and explains what she can do next.
 
