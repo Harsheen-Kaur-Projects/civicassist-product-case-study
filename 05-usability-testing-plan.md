@@ -10,7 +10,7 @@ This was informal testing, not a representative user study. I treated the feedba
 
 I started each session by saying:
 
-> “This is an early prototype, not a finished product. I'm testing the design, not you — if something's confusing, that's useful information. Think out loud as you go.”
+> “This is an early prototype, not a finished product. I'm testing the design, not you if something's confusing, that's useful information. Think out loud as you go.”
 
 I then gave them five tasks rather than walking them through the screens myself.
 
@@ -24,7 +24,7 @@ I didn't explain where to click. I wanted to see whether the starting point and 
 
 > “Walk me through what this screen is telling you. Do you trust it? Why or why not?”
 
-I watched whether they understood the answer, noticed the wording such as **“Likely qualify,”** and looked at the source behind it.
+I watched whether they understood the answer, noticed the wording such as “Likely qualify,” and looked at the source behind it.
 
 ### 3. Trying an unclear case
 
@@ -44,7 +44,7 @@ I wanted to see whether the checklist felt useful and whether people could under
 
 > “What does this do well, and what would make you not trust it?”
 
-I also paid attention to things they didn't say out loud — hesitation, re-reading, looking for something that wasn't there, or trying to click something I hadn't intended them to click.
+I also paid attention to things they didn't say out loud: hesitation, re-reading, looking for something that wasn't there, or trying to click something I hadn't intended them to click.
 
 If someone missed something that I thought was obvious, I treated that as a design problem rather than a user mistake.
 
@@ -53,7 +53,7 @@ If someone missed something that I thought was obvious, I treated that as a desi
 | # | Screen | What happened | What I took from it |
 |---|---|---|---|
 | 1 | Screen 3 — uncertainty | “I did have to look twice at the orange one though — I thought it meant rejected.” | The uncertainty colour could easily be read as a negative outcome. |
-| 2 | Screen 4 — checklist | Called this the most useful screen, but didn't notice the **“Updated Mar 2026”** date until I pointed it out. | Having the date there isn't enough if people don't actually see it. M3 needs stronger visual emphasis. |
+| 2 | Screen 4 — checklist | Called this the most useful screen, but didn't notice the “Updated Mar 2026” date until I pointed it out. | Having the date there isn't enough if people don't actually see it. M3 needs stronger visual emphasis. |
 | 3 | Screen 2 — cited answer | “‘Likely qualify’ made me wonder why it's not just saying yes. Then I saw the source and it made more sense.” | The wording creates some hesitation, but the citation helps explain why the answer isn't a simple yes. |
 | 4 | Screen 3 — uncertainty | “I thought something had gone wrong, but then I read it properly. Maybe the colour is what threw me off.” | A second person had the same reaction. The wording itself wasn't the problem. |
 | 5 | Screen 5 — source detail | Liked being able to check the actual rule, but said, “I probably wouldn't read all that legal text unless I had doubts.” | Good reason to keep the detailed source behind the main answer rather than putting it front and centre. |
@@ -67,7 +67,7 @@ Two of the six people initially read the amber card as a rejection or something 
 
 I changed the uncertainty card from amber to a cooler slate tone. I kept the wording the same because the message itself was working once people read it.
 
-This was a useful reminder that **getting the wording right isn't enough if the visual treatment tells people something different at first glance.**
+This was a useful reminder that getting the wording right isn't enough if the visual treatment tells people something different at first glance.
 
 I also kept the source and source update date visible on the relevant screens. The testing showed that people valued being able to verify the answer, but the update date was easy to miss. I didn't remove it or hide it; stronger visual emphasis is something the design still needs.
 
@@ -83,12 +83,12 @@ That meant the information wasn't being carried consistently through the prototy
 
 I fixed this by separating the two paths in the prototype:
 
-- **4A** — the normal case, with one income gap
-- **4B** — the more complicated case, with two income gaps
+- 4A — the normal case, with one income gap
+- 4B — the more complicated case, with two income gaps
 
 I also replaced the hidden demo click area with a visible second button:
 
-**“This is a bit more complicated”**
+“This is a bit more complicated”
 
 That makes the choice explicit instead of expecting someone to discover an invisible interaction.
 
@@ -106,7 +106,7 @@ It was only a small follow-up, but it was enough to tell me the change was clear
 
 The biggest takeaway wasn't a particular colour or button.
 
-It was that **the prototype could contain the right information and still communicate the wrong thing.**
+It was that the prototype could contain the right information and still communicate the wrong thing.
 
 The uncertainty state had the correct wording, but the colour made it look like a rejection. The source update date was present, but people didn't notice it. The detailed rule was available, but showing all of it at once would have made the main answer harder to use.
 
