@@ -1,6 +1,6 @@
 # Persona and journey map
 
-This persona is based on the problems identified in `01-research-plan.md`. Ananya is a working persona, not someone I interviewed, so the details here are meant to represent a realistic user situation rather than describe a real individual.
+This persona is based on the problems identified in `01-research-plan.md`. Ananya is a working persona, not someone I interviewed, so the details here are meant to represent a realistic user situation rather than describe a real individual. A few specific behaviors referenced later, like checking a source before trusting an answer or missing the update date until it was pointed out are drawn from real conversations during usability testing, tagged `[Interview]` in `03-PRD.md`. The persona itself is still a composite, not a real person.
 
 ## Ananya Sharma, 20
 
@@ -41,7 +41,7 @@ She then reaches a situation where the available information doesn't give a clea
 
 Maybe there were two separate gaps in family income during the year, but the published rule only talks about one. At this point, a normal system might still force the situation into a yes or no answer.
 
-That creates a bigger problem: **is she actually not eligible, or does the system just not have enough information to tell?**
+That creates a bigger problem: is she actually not eligible, or does the system just not have enough information to tell?
 
 **CivicAssist:** Instead of turning an unclear case into a rejection, the assistant shows that the answer is uncertain and explains what she can do next.
 
@@ -59,7 +59,7 @@ Ananya's situation points to a fairly simple product direction:
 
 - Let people explain their situation in their own words.
 - Show the source behind an eligibility answer.
-- Make the difference between **“not eligible”** and **“not enough information”** obvious.
+- Make the difference between “not eligible” and “not enough information” obvious.
 - Show when the source was last updated.
 - Give people a document list that is relevant to their situation.
 - Give them something useful to do when the answer isn't clear.
