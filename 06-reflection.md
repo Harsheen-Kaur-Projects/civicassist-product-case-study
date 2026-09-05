@@ -1,6 +1,6 @@
 # Reflection: from the eval harness to CivicAssist
 
-Building the eval harness, the finding that stuck with me wasn't that the model got something wrong. It was that it got something wrong confidently.
+Building the eval harness, the finding that stuck with me was how confident it sounded while being wrong, not hedged, not vague, just stated like fact.
 
 It invented a 12–24 month eligibility rule that didn't exist anywhere in the source material, and presented it in exactly the same way it would've presented something that was true. Nothing in the answer gave you a reason to question it.
 
@@ -12,7 +12,7 @@ Unresolved versus rejected sounds like a small distinction when written down, bu
 
 The initial research looked at how real portals like MahaDBT and NSP handle these situations. Interviews came later, during usability testing: a couple of the PRD's requirements are tagged `[Interview]` because of what came up in those conversations. What I found was reassuring in the worst possible way: some of the same ambiguity already exists in the systems people are actually using. MahaDBT's 2.0 rollout left applications stuck because of portal issues, while NSP's troubleshooting guidance makes it clear that income certificate validity isn't governed by one consistent rule across every situation.
 
-None of that is an AI hallucinating. It's the same basic problem showing up somewhere else: a system can leave someone with what looks like a definite outcome when the underlying situation is actually unclear.
+None of that is an AI hallucinating. It's the same basic problem showing up somewhere else, a system can leave someone with what looks like a definite outcome when the underlying situation is actually unclear.
 
 ## What testing actually showed
 
@@ -42,6 +42,6 @@ That made the current approach feel right: show the source, but don't put the en
 
 The testing also caught a smaller issue I hadn't noticed myself. One person didn't notice the “Updated Mar 2026” date on the checklist until I pointed it out. It was technically on the screen, but that didn't mean it was doing its job.
 
-That became another useful distinction for me: putting information somewhere isn't the same as making it noticeable.
+That became another useful distinction for me. Putting information somewhere isn't the same as making it noticeable.
 
 And that's probably the biggest connection between the eval harness and CivicAssist for me. In both cases, the goal isn't just to produce an answer. It's to make the limits of that answer visible enough that someone can actually make a sensible decision about whether to trust it.
