@@ -52,12 +52,12 @@ If someone missed something that I thought was obvious, I treated that as a desi
 
 | # | Screen | What happened | What I took from it |
 |---|---|---|---|
-| 1 | Screen 3 — uncertainty | “I did have to look twice at the orange one though — I thought it meant rejected.” | The uncertainty colour could easily be read as a negative outcome. |
-| 2 | Screen 4 — checklist | Called this the most useful screen, but didn't notice the “Updated Mar 2026” date until I pointed it out. | Having the date there isn't enough if people don't actually see it. M3 needs stronger visual emphasis. |
-| 3 | Screen 2 — cited answer | “‘Likely qualify’ made me wonder why it's not just saying yes. Then I saw the source and it made more sense.” | The wording creates some hesitation, but the citation helps explain why the answer isn't a simple yes. |
-| 4 | Screen 3 — uncertainty | “I thought something had gone wrong, but then I read it properly. Maybe the colour is what threw me off.” | A second person had the same reaction. The wording itself wasn't the problem. |
-| 5 | Screen 5 — source detail | Liked being able to check the actual rule, but said, “I probably wouldn't read all that legal text unless I had doubts.” | Good reason to keep the detailed source behind the main answer rather than putting it front and centre. |
-| 6 | Screen 5 — source detail | Wanted a plain-language explanation alongside the legal text. | A useful improvement I hadn't considered. Worth adding later, but not something that blocks v1. |
+| 1 | Screen 3 - uncertainty | “I did have to look twice at the orange one though, I thought it meant rejected.” | The uncertainty colour could easily be read as a negative outcome. |
+| 2 | Screen 4 - checklist | Called this the most useful screen, but didn't notice the “Updated Mar 2026” date until I pointed it out. | Having the date there isn't enough if people don't actually see it. M3 needs stronger visual emphasis. |
+| 3 | Screen 2 - cited answer | “‘Likely qualify’ made me wonder why it's not just saying yes. Then I saw the source and it made more sense.” | The wording creates some hesitation, but the citation helps explain why the answer isn't a simple yes. |
+| 4 | Screen 3 - uncertainty | “I thought something had gone wrong, but then I read it properly. Maybe the colour is what threw me off.” | A second person had the same reaction. The wording itself wasn't the problem. |
+| 5 | Screen 5 - source detail | Liked being able to check the actual rule, but said, “I probably wouldn't read all that legal text unless I had doubts.” | Good reason to keep the detailed source behind the main answer rather than putting it front and centre. |
+| 6 | Screen 5 - source detail | Wanted a plain-language explanation alongside the legal text. | A useful improvement I hadn't considered. Worth adding later, but not something that blocks v1. |
 
 ## What I changed
 
