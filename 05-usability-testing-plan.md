@@ -110,6 +110,6 @@ It was that the prototype could contain the right information and still communic
 
 The uncertainty state had the correct wording, but the colour made it look like a rejection. The source update date was present, but people didn't notice it. The detailed rule was available, but showing all of it at once would have made the main answer harder to use.
 
-That's really what I want CivicAssist to get right: **not just giving someone an answer, but being honest about how certain that answer is and showing them where it came from.**
+That's really what I want CivicAssist to get right: not just giving someone an answer, but being honest about how certain that answer is and showing them where it came from.
 
 The testing helped me turn that idea into specific design decisions.
