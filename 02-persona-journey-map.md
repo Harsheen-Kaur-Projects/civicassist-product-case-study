@@ -25,7 +25,7 @@ She starts with Google, MahaDBT and NSP, looking for the scholarship that matche
 
 She can find the information, but it takes some effort to piece it together. There are lots of scheme pages and different requirements, and it's not always obvious which details matter for her.
 
-**CivicAssist:** She starts by describing her situation instead of trying to work out the right category first. The assistant uses that information to narrow down what may apply.
+CivicAssist: She starts by describing her situation instead of trying to work out the right category first. The assistant uses that information to narrow down what may apply.
 
 ### 2. Checking whether she qualifies
 
@@ -33,7 +33,7 @@ Once she has a possible scheme, she wants to know whether her particular situati
 
 This is where a simple yes/no answer isn't always enough. For example, if her family's income changed during the year, she needs to know whether that affects the requirement and what the actual rule says.
 
-**CivicAssist:** The answer is tied to a specific source and clause, with the source's last-updated date shown alongside it. She can see what the answer is based on rather than having to take it on trust.
+CivicAssist: The answer is tied to a specific source and clause, with the source's last-updated date shown alongside it. She can see what the answer is based on rather than having to take it on trust.
 
 ### 3. Running into something the rules don't explain
 
@@ -43,7 +43,7 @@ Maybe there were two separate gaps in family income during the year, but the pub
 
 That creates a bigger problem: is she actually not eligible, or does the system just not have enough information to tell?
 
-**CivicAssist:** Instead of turning an unclear case into a rejection, the assistant shows that the answer is uncertain and explains what she can do next.
+CivicAssist: Instead of turning an unclear case into a rejection, the assistant shows that the answer is uncertain and explains what she can do next.
 
 ### 4. Working out what to submit
 
@@ -51,7 +51,7 @@ After that, she still needs to gather her documents.
 
 The general checklist has more items than she expects, and she's tempted to collect everything just to be safe. She doesn't want to leave something out and have her application rejected later.
 
-**CivicAssist:** The checklist is based on the situation she has described. Each document has a short explanation of why it's needed, so she can understand the list instead of just ticking boxes.
+CivicAssist: The checklist is based on the situation she has described. Each document has a short explanation of why it's needed, so she can understand the list instead of just ticking boxes.
 
 ## What this journey tells me
 
