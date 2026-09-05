@@ -8,7 +8,7 @@ GitHub: https://github.com/Harsheen-Kaur-Projects
 
 CivicAssist came out of a problem I found while working on my AI evaluation harness.
 
-The harness caught a model confidently inventing a **12–24 month eligibility rule that didn't exist in the source material**. That made me think beyond the model itself: if an AI system doesn't actually have enough evidence to answer, what should the product do?
+The harness caught a model confidently inventing a 12–24 month eligibility rule that didn't exist in the source material. That made me think beyond the model itself: if an AI system doesn't actually have enough evidence to answer, what should the product do?
 
 CivicAssist is my attempt at answering that question.
 
@@ -36,7 +36,7 @@ The research started with a documentation audit of MahaDBT and the National Scho
 
 That gave me evidence that these problems exist. It didn't tell me what it feels like to deal with them as an applicant, or what someone actually does when the system gives them an unclear answer. That's an important limitation of this first round.
 
-I then built a small prototype around one idea: **the assistant should be able to show when the evidence isn't enough to give a definite answer.**
+I then built a small prototype around one idea: the assistant should be able to show when the evidence isn't enough to give a definite answer.
 
 The usability testing was first-hand. I ran six informal sessions with friends using the live prototype. One thing I wouldn't have caught from the documentation showed up pretty quickly: two people initially read the amber uncertainty screen as a rejection/error screen before reading the text.
 
